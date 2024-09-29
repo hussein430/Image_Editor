@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>image Editor</title>
+    <!-- Css -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+
+    <header>
+      <div class="title">
+        <h1>IMAGE EDITOR</h1>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <h2>Easy image editor</h2>
+        <div class="content">
+          <div class="settings">
+            <h2>Filter</h2>
+            <div class="masks">
+              <div class="mask1">
+                <button id="brightness" class="brightness active"><h2>Brightness</h2></button>
+                <button id="inversion" class="inversion"><h2>Inversion</h2></button>
+              </div>
+              <div class="mask2">
+                <button id="saturation" class="saturation"><h2>Saturation</h2></button>
+                <button id="grayscale" class="grayscale"><h2>Grayscale</h2></button>
+              </div>
+            </div>
+            <div class="degree">
+              <h2 class="degreeFilter">Brightness</h2>
+              <p>100%</p>
+              <input type="range" class="range" value="100" max="200" min="0" />
+            </div>
+            <div class="processes">
+              <h2>Rotate & Flip</h2>
+              <div class="icons">
+                <button>
+                  <i class="fa-solid fa-rotate-right"></i>
+                </button>
+                <button>
+                  <i class="fa-solid fa-rotate-left"></i>
+                </button>
+                <button>
+                  <img src="images/reflect.png" alt="reflect" width="28px">
+                </button>
+                <button>
+                  <img src="images/vertical-flip.png" alt="reflect" width="28px">
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="imageBox">
+            <img src="images/image-placeholder.svg" alt="preview">
+          </div>
+        </div>
+        <div class="footer-main">
+          <div class="filter-Rest footer-button">
+            <button><h2>Rest Filter</h2></button>
+          </div>
+          <div class="upload-save footer-button">
+            <input type="file" class="file-input" accept="image/*" hidden>
+            <button class="upload"><h2>CHOOSE IMAGE</h2></button>
+            <button class="save"><h2>SAVE IMAGE</h2></button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="myName title">
+        <h2>HUSSEIN ALAA</h2>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/b81843000d.js"
+      crossorigin="anonymous"
+    ></script>
+    
+  </body>
+</html>
+
