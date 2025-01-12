@@ -30,35 +30,36 @@
             <h2>Filter</h2>
             <div class="masks">
               <div class="mask1">
-                <button id="brightness" class="brightness active"><h2>Brightness</h2></button>
-                <button id="inversion" class="inversion"><h2>Inversion</h2></button>
+                <button id="brightness" class="brightness active" disabled><h2>Brightness</h2></button>
+                <button id="inversion" class="inversion" disabled><h2>Inversion</h2></button>
               </div>
               <div class="mask2">
-                <button id="saturation" class="saturation"><h2>Saturation</h2></button>
-                <button id="grayscale" class="grayscale"><h2>Grayscale</h2></button>
+                <button id="saturation" class="saturation" disabled><h2>Saturation</h2></button>
+                <button id="grayscale" class="grayscale" disabled><h2>Grayscale</h2></button>
               </div>
             </div>
             <div class="degree">
               <h2 class="degreeFilter">Brightness</h2>
               <p>100%</p>
-              <input type="range" class="range" value="100" max="200" min="0" />
+              <input type="range" class="range" value="100" max="200" min="0" disabled/>
             </div>
             <div class="processes">
               <h2>Rotate & Flip</h2>
               <div class="icons">
-                <button>
+                <button id="rotateRight" disabled>
                   <i class="fa-solid fa-rotate-right"></i>
                 </button>
-                <button>
+                <button id="rotateLeft" disabled>
                   <i class="fa-solid fa-rotate-left"></i>
                 </button>
-                <button>
+                <button id="flipHorizontal" disabled>
                   <img src="images/reflect.png" alt="reflect" width="28px">
                 </button>
-                <button>
+                <button id="flipVertical" disabled>
                   <img src="images/vertical-flip.png" alt="reflect" width="28px">
                 </button>
               </div>
+              
             </div>
           </div>
           <div class="imageBox">
